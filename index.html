@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="InnovaIT Servicios y Soluciones - Especialistas en Formaciones Tecnológicas a la Medida, Desarrollo de Software, Ciberseguridad y Agentes de IA en El Salvador y Centroamérica.">
+  <meta name="keywords" content="InnovaIT, desarrollo de software El Salvador, formaciones empresariales, capacitaciones tecnologia, ciberseguridad, agentes de IA, soluciones informaticas">
+  <title>InnovaIT Servicios y Soluciones | Formaciones & Desarrollo de Software</title>
+
+  <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       Navigation Bar
+       ========================================================================== -->
+  <nav class="navbar navbar-expand-lg site-navbar fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="assets/img/logo-innovait.png" alt="InnovaIT Servicios y Soluciones" class="brand-logo-img">
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Abrir navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="formaciones.html">Formaciones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="desarrollo-software.html">Desarrollo de Software</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="soluciones-ti.html">Soluciones TI</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+            <a href="https://wa.me/50368315695?text=Hola%20InnovaIT%2C%20quisiera%20solicitar%20asesor%C3%ADa%20en%20sus%20servicios." target="_blank" rel="noopener noreferrer" class="btn btn-innova-primary">
+              <i class="bi bi-whatsapp"></i> WhatsApp Directo
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==========================================================================
+       Hero Section
+       ========================================================================== -->
+  <header class="hero-wrapper">
+    <div class="container position-relative" style="z-index: 2;">
+      <div class="row align-items-center g-5 pt-4">
+        <div class="col-lg-7">
+          <div class="badge-innova-dark mb-3">
+            <i class="bi bi-shield-check text-info me-1"></i> Soluciones Informáticas Confiables • El Salvador
+          </div>
+          <h1 class="hero-title mb-4">
+            Impulsamos su futuro con <span class="text-gradient-cyan">Formación Tecnológica</span> y <span class="text-gradient-cyan">Software a la Medida</span>
+          </h1>
+          <p class="hero-subtitle mb-4">
+            En <strong>InnovaIT Servicios y Soluciones</strong> convertimos la tecnología en una ventaja competitiva: capacitamos al talento humano de su empresa y construimos sistemas de software escalables, robustos y seguros.
+          </p>
+          <div class="d-flex flex-wrap gap-3 mb-4">
+            <a href="formaciones.html" class="btn btn-innova-primary">
+              <i class="bi bi-mortarboard-fill"></i> Explorar Formaciones
+            </a>
+            <a href="desarrollo-software.html" class="btn btn-innova-outline text-white border-light">
+              <i class="bi bi-code-slash"></i> Desarrollo de Software
+            </a>
+            <button onclick="window.openInnovaBot()" class="btn btn-outline-info d-inline-flex align-items-center gap-2">
+              <i class="bi bi-robot"></i> Consultar a InnovaBot
+            </button>
+          </div>
+          <div class="d-flex align-items-center gap-4 pt-2 text-white-50 small">
+            <div><i class="bi bi-check-circle-fill text-info me-1"></i> Modalidad In-Company & Online</div>
+            <div><i class="bi bi-check-circle-fill text-info me-1"></i> Desarrollo Ágil & Cloud</div>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="position-relative">
+            <img src="assets/img/hero-tech-team.jpg" alt="Equipo de Ingeniería y Desarrollo InnovaIT" class="img-tech-frame mb-4">
+            <div class="hero-card">
+              <div class="d-flex align-items-center justify-content-between mb-3 border-bottom border-secondary pb-3">
+                <div class="d-flex align-items-center gap-2">
+                  <span class="badge bg-primary p-2 rounded-circle"><i class="bi bi-cpu-fill"></i></span>
+                  <span class="fw-bold text-white">Ecosistema InnovaIT</span>
+                </div>
+                <span class="badge bg-success-subtle text-success">Activo 24/7</span>
+              </div>
+
+              <div class="mb-3 p-3 rounded-3" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08);">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <span class="text-info fw-bold small"><i class="bi bi-mortarboard"></i> Formaciones Especializadas</span>
+                  <span class="badge bg-primary">Corporativo</span>
+                </div>
+                <p class="text-white-50 small mb-0">Rutas de aprendizaje en Desarrollo, Ciberseguridad, Cloud y Automatización.</p>
+              </div>
+
+              <div class="mb-3 p-3 rounded-3" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08);">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <span class="text-info fw-bold small"><i class="bi bi-laptop"></i> Software a la Medida</span>
+                  <span class="badge bg-info text-dark">High-Performance</span>
+                </div>
+                <p class="text-white-50 small mb-0">Sistemas empresariales web, apps móviles y APIs con arquitecturas modernas.</p>
+              </div>
+
+              <div class="p-3 rounded-3" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08);">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <span class="text-info fw-bold small"><i class="bi bi-robot"></i> Agentes de IA & Soluciones TI</span>
+                  <span class="badge bg-warning text-dark">Innovación</span>
+                </div>
+                <p class="text-white-50 small mb-0">Automatización RPA, ciberseguridad avanzada y agentes inteligentes.</p>
+              </div>
+
+              <div class="mt-4 text-center">
+                <a href="contacto.html" class="btn btn-innova-primary w-100">
+                  <i class="bi bi-send-fill"></i> Solicitar Asesoría Personalizada
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       Dual Core Pillars: Formaciones & Desarrollo de Software
+       ========================================================================== -->
+  <section class="py-5" style="background-color: #f8fafc;">
+    <div class="container py-4">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <span class="badge-innova mb-2"><i class="bi bi-stars"></i> Nuestro Fuerte Principal</span>
+        <h2 class="display-6 fw-bold">Especialidades que Transforman Negocios</h2>
+        <p class="text-muted">Diseñamos soluciones tecnológicas integrales combinando la capacitación de equipos con la ingeniería de software más avanzada.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Pillar 1: Formaciones -->
+        <div class="col-lg-6">
+          <div class="pillar-highlight-card pillar-training">
+            <img src="assets/img/training-classroom.jpg" alt="Capacitaciones Tecnológicas In-Company InnovaIT" class="pillar-img-header">
+            <div class="d-flex align-items-center justify-content-between mb-4">
+              <div class="service-icon-box bg-white text-primary shadow-sm mb-0">
+                <i class="bi bi-mortarboard-fill" style="color: #00a8e8;"></i>
+              </div>
+              <span class="badge bg-primary-subtle text-primary fw-bold px-3 py-2 rounded-pill">Para Empresas & Profesionales</span>
+            </div>
+            <h3 class="fw-bold mb-3">Formaciones y Capacitaciones Tecnológicas</h3>
+            <p class="text-secondary mb-4">
+              El activo más valioso de cualquier organización es su talento. En InnovaIT diseñamos programas formativos 100% prácticos y adaptados a la realidad operativa de su empresa.
+            </p>
+            <div class="mb-4">
+              <div class="check-item"><i class="bi bi-check-circle-fill"></i> <span><strong>Desarrollo de Software Moderno:</strong> Frontend, Backend, Fullstack y Frameworks actuales.</span></div>
+              <div class="check-item"><i class="bi bi-check-circle-fill"></i> <span><strong>Ciberseguridad Práctica:</strong> Concientización, respuesta a incidentes y buenas prácticas.</span></div>
+              <div class="check-item"><i class="bi bi-check-circle-fill"></i> <span><strong>Cloud & Arquitectura:</strong> Despliegues en AWS, Azure y DevOps.</span></div>
+              <div class="check-item"><i class="bi bi-check-circle-fill"></i> <span><strong>Metodología Bootcamp In-Company:</strong> Casos reales, talleres y proyectos aplicados.</span></div>
+            </div>
+            <div class="d-flex flex-wrap gap-2 pt-2">
+              <a href="formaciones.html" class="btn btn-innova-primary">
+                Ver Catálogo de Formaciones <i class="bi bi-arrow-right"></i>
+              </a>
+              <button onclick="window.openInnovaBot('training')" class="btn btn-outline-primary">
+                Consultar Temarios
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pillar 2: Desarrollo de Software -->
+        <div class="col-lg-6">
+          <div class="pillar-highlight-card pillar-software">
+            <img src="assets/img/software-development.jpg" alt="Desarrollo de Software a la Medida InnovaIT" class="pillar-img-header">
+            <div class="d-flex align-items-center justify-content-between mb-4">
+              <div class="service-icon-box bg-dark text-info border border-info mb-0">
+                <i class="bi bi-code-slash text-info"></i>
+              </div>
+              <span class="badge bg-info-subtle text-info fw-bold px-3 py-2 rounded-pill">Ingeniería a la Medida</span>
+            </div>
+            <h3 class="fw-bold mb-3 text-white">Desarrollo de Software y Soluciones Digitales</h3>
+            <p class="text-white-50 mb-4">
+              Creamos soluciones de software robustas que automatizan procesos críticos, eliminan cuellos de botella y potencian la rentabilidad de su organización.
+            </p>
+            <div class="mb-4">
+              <div class="check-item"><i class="bi bi-check-circle-fill text-info"></i> <span class="text-white"><strong>Plataformas Web y SaaS:</strong> Portales transaccionales, dashboards y sistemas de gestión.</span></div>
+              <div class="check-item"><i class="bi bi-check-circle-fill text-info"></i> <span class="text-white"><strong>Aplicaciones Móviles:</strong> Apps nativas e híbridas para iOS y Android de alta fluidez.</span></div>
+              <div class="check-item"><i class="bi bi-check-circle-fill text-info"></i> <span class="text-white"><strong>Integración de Sistemas & APIs:</strong> Conectividad con pasarelas de pago, ERPs y CRMs.</span></div>
+              <div class="check-item"><i class="bi bi-check-circle-fill text-info"></i> <span class="text-white"><strong>Modernización de Sistemas:</strong> Refactorización y migración segura hacia la nube.</span></div>
+            </div>
+            <div class="d-flex flex-wrap gap-2 pt-2">
+              <a href="desarrollo-software.html" class="btn btn-innova-primary">
+                Explorar Desarrollo de Software <i class="bi bi-arrow-right"></i>
+              </a>
+              <button onclick="window.openInnovaBot('software')" class="btn btn-outline-light">
+                Cotizar Proyecto
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Soluciones TI Complementarias (Estilo Setesa)
+       ========================================================================== -->
+  <section class="py-5">
+    <div class="container py-4">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <span class="badge-innova mb-2"><i class="bi bi-shield-shaded"></i> Cartera Integral</span>
+        <h2 class="display-6 fw-bold">Soluciones Informáticas de Extremo a Extremo</h2>
+        <p class="text-muted">Inspirados en los más altos estándares tecnológicos de la región, ofrecemos un portafolio de servicios para blindar y potenciar su infraestructura.</p>
+      </div>
+
+      <!-- Banner Visual de Infraestructura y Ciberseguridad -->
+      <div class="row mb-5">
+        <div class="col-12">
+          <div class="position-relative rounded-4 overflow-hidden shadow-sm" style="max-height: 280px;">
+            <img src="assets/img/cyber-datacenter.jpg" alt="Infraestructura y Centro de Datos Corporativo" class="w-100" style="height: 280px; object-fit: cover;">
+            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: linear-gradient(90deg, rgba(15,23,42,0.92) 0%, rgba(15,23,42,0.6) 60%, rgba(0,0,0,0.2) 100%);">
+              <div class="p-4 p-md-5 text-white" style="max-width: 650px;">
+                <span class="badge bg-info text-dark fw-bold mb-2">Continuidad Operativa</span>
+                <h3 class="fw-bold mb-2 text-white">Infraestructura & Protección de Misión Crítica</h3>
+                <p class="text-white-50 small mb-0">Arquitectura de servidores, redes corporativas y ciberseguridad avanzada para garantizar que su negocio nunca se detenga.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <!-- Servicio 1: Ciberseguridad -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card-service">
+            <div class="service-icon-box">
+              <i class="bi bi-shield-lock-fill"></i>
+            </div>
+            <h4 class="fw-bold mb-2">Ciberseguridad Defensiva</h4>
+            <p class="text-muted small mb-3">
+              Defensas avanzadas perimetrales y de aplicaciones (Firewall, WAF, detección de intrusos, prevención contra DDoS y análisis de vulnerabilidades).
+            </p>
+            <ul class="list-unstyled small text-secondary mb-4">
+              <li><i class="bi bi-check2 text-primary me-1"></i> Protección de redes y endpoints</li>
+              <li><i class="bi bi-check2 text-primary me-1"></i> Auditorías y ethical hacking</li>
+              <li><i class="bi bi-check2 text-primary me-1"></i> Resguardo de datos confidenciales</li>
+            </ul>
+            <a href="soluciones-ti.html#ciberseguridad" class="mt-auto fw-bold text-decoration-none" style="color: #00a8e8;">
+              Conocer más <i class="bi bi-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Servicio 2: Agentes IA & RPA -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card-service">
+            <div class="service-icon-box">
+              <i class="bi bi-robot"></i>
+            </div>
+            <h4 class="fw-bold mb-2">Agentes de IA & RPA</h4>
+            <p class="text-muted small mb-3">
+              Automatización robótica de procesos y agentes virtuales inteligentes para atención al cliente, captación comercial y optimización de flujos repetitivos.
+            </p>
+            <ul class="list-unstyled small text-secondary mb-4">
+              <li><i class="bi bi-check2 text-primary me-1"></i> Asistentes virtuales conversacionales</li>
+              <li><i class="bi bi-check2 text-primary me-1"></i> Automatización con UiPath & Copilot</li>
+              <li><i class="bi bi-check2 text-primary me-1"></i> Integración con WhatsApp y CRM</li>
+            </ul>
+            <a href="soluciones-ti.html#ia-rpa" class="mt-auto fw-bold text-decoration-none" style="color: #00a8e8;">
+              Conocer más <i class="bi bi-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Servicio 3: Cloud & Infraestructura -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card-service">
+            <div class="service-icon-box">
+              <i class="bi bi-cloud-check-fill"></i>
+            </div>
+            <h4 class="fw-bold mb-2">Cloud & Infraestructura</h4>
+            <p class="text-muted small mb-3">
+              Administración y migración a nubes seguras (AWS, Azure, Google Cloud) junto con licenciamiento corporativo Microsoft 365 y VMware.
+            </p>
+            <ul class="list-unstyled small text-secondary mb-4">
+              <li><i class="bi bi-check2 text-primary me-1"></i> Servidores Dell, HP, Lenovo</li>
+              <li><i class="bi bi-check2 text-primary me-1"></i> Switches, routers y conectividad Cisco</li>
+              <li><i class="bi bi-check2 text-primary me-1"></i> Licenciamiento empresarial</li>
+            </ul>
+            <a href="soluciones-ti.html#infraestructura" class="mt-auto fw-bold text-decoration-none" style="color: #00a8e8;">
+              Conocer más <i class="bi bi-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Servicio 4: Outsourcing IT -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card-service">
+            <div class="service-icon-box">
+              <i class="bi bi-people-fill"></i>
+            </div>
+            <h4 class="fw-bold mb-2">Outsourcing de Talento IT</h4>
+            <p class="text-muted small mb-3">
+              Proveemos ingenieros, desarrolladores y especialistas técnicos para fortalecer las capacidades de su equipo sin cargas operativas complejas.
+            </p>
+            <ul class="list-unstyled small text-secondary mb-4">
+              <li><i class="bi bi-check2 text-primary me-1"></i> Staff augmentation calificado</li>
+              <li><i class="bi bi-check2 text-primary me-1"></i> Soporte técnico especializado</li>
+              <li><i class="bi bi-check2 text-primary me-1"></i> Flexibilidad según demanda</li>
+            </ul>
+            <a href="soluciones-ti.html#outsourcing" class="mt-auto fw-bold text-decoration-none" style="color: #00a8e8;">
+              Conocer más <i class="bi bi-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Servicio 5: Inteligencia de Negocios (BI) -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card-service">
+            <div class="service-icon-box">
+              <i class="bi bi-graph-up-arrow"></i>
+            </div>
+            <h4 class="fw-bold mb-2">Inteligencia de Negocios (BI)</h4>
+            <p class="text-muted small mb-3">
+              Transformación de datos crudos en paneles estratégicos con Power BI y analítica predictiva para toma de decisiones ágiles y rentables.
+            </p>
+            <ul class="list-unstyled small text-secondary mb-4">
+              <li><i class="bi bi-check2 text-primary me-1"></i> Dashboards ejecutivos en tiempo real</li>
+              <li><i class="bi bi-check2 text-primary me-1"></i> Limpieza y modelado de datos</li>
+              <li><i class="bi bi-check2 text-primary me-1"></i> Indicadores clave de rendimiento (KPIs)</li>
+            </ul>
+            <a href="soluciones-ti.html#bi" class="mt-auto fw-bold text-decoration-none" style="color: #00a8e8;">
+              Conocer más <i class="bi bi-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Servicio 6: Consultoría Estratégica -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card-service">
+            <div class="service-icon-box">
+              <i class="bi bi-lightbulb-fill"></i>
+            </div>
+            <h4 class="fw-bold mb-2">Consultoría & Transformación</h4>
+            <p class="text-muted small mb-3">
+              Acompañamiento directivo para la modernización de infraestructuras, adopción de metodologías ágiles y optimización de presupuestos de TI.
+            </p>
+            <ul class="list-unstyled small text-secondary mb-4">
+              <li><i class="bi bi-check2 text-primary me-1"></i> Diagnóstico de madurez digital</li>
+              <li><i class="bi bi-check2 text-primary me-1"></i> Plan director de tecnología</li>
+              <li><i class="bi bi-check2 text-primary me-1"></i> Retorno de inversión tecnológico</li>
+            </ul>
+            <a href="soluciones-ti.html" class="mt-auto fw-bold text-decoration-none" style="color: #00a8e8;">
+              Conocer más <i class="bi bi-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       AI Agent Feature Banner: InnovaBot
+       ========================================================================== -->
+  <section class="py-5" style="background: linear-gradient(135deg, #0b1120 0%, #1e293b 100%); color: #ffffff;">
+    <div class="container py-4">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <span class="badge-innova-dark mb-3"><i class="bi bi-cpu"></i> Inteligencia Artificial en Acción</span>
+          <h2 class="display-6 fw-bold text-white mb-3">
+            Conoce a <span class="text-gradient-cyan">InnovaBot</span>: Su Asistente Tecnológico Virtual
+          </h2>
+          <p class="text-white-50 mb-4">
+            No solo ofrecemos servicios tecnológicos: aplicamos agentes de inteligencia artificial en nuestras propias plataformas. Pruébelo ahora mismo en la esquina inferior para resolver dudas sobre cursos, cotizar proyectos o hablar con un especialista.
+          </p>
+          <div class="d-flex flex-column gap-3 mb-4">
+            <div class="d-flex align-items-center gap-3">
+              <span class="badge bg-primary p-2 rounded-circle"><i class="bi bi-lightning-charge-fill"></i></span>
+              <span>Respuestas inmediatas sobre temarios y duración de cursos.</span>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+              <span class="badge bg-info text-dark p-2 rounded-circle"><i class="bi bi-calculator"></i></span>
+              <span>Precalificación de requerimientos de software para presupuestos ágiles.</span>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+              <span class="badge bg-success p-2 rounded-circle"><i class="bi bi-whatsapp"></i></span>
+              <span>Conexión fluida de 1 clic a nuestro WhatsApp oficial (+503 68315695).</span>
+            </div>
+          </div>
+          <button onclick="window.openInnovaBot()" class="btn btn-innova-primary">
+            <i class="bi bi-chat-dots-fill"></i> Iniciar Conversación con el Agente
+          </button>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="p-4 rounded-4" style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(56, 189, 248, 0.3); box-shadow: 0 20px 40px rgba(0,0,0,0.5);">
+            <div class="d-flex align-items-center justify-content-between mb-3 border-bottom border-secondary pb-2">
+              <div class="d-flex align-items-center gap-2">
+                <div class="chat-avatar" style="width: 32px; height: 32px; font-size: 0.9rem;"><i class="bi bi-robot"></i></div>
+                <span class="fw-bold text-white small">Simulación de Interacción</span>
+              </div>
+              <span class="badge bg-success text-white small">En línea</span>
+            </div>
+            <div class="d-flex flex-column gap-2 small">
+              <div class="p-2 rounded-3 bg-dark border border-secondary text-white-50" style="max-width: 85%;">
+                ¡Hola! ¿Buscas capacitación para tu equipo o necesitas desarrollar una solución de software?
+              </div>
+              <div class="p-2 rounded-3 text-white align-self-end" style="background-color: #00a8e8; max-width: 80%;">
+                Necesitamos capacitar a 10 ingenieros en Ciberseguridad y Cloud.
+              </div>
+              <div class="p-2 rounded-3 bg-dark border border-secondary text-white-50" style="max-width: 85%;">
+                ¡Excelente! Tenemos el programa corporativo ideal. Genero tu temario y te conecto con coordinación académica en WhatsApp...
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Quick Contact & Lead Form
+       ========================================================================== -->
+  <section class="py-5" style="background-color: #ffffff;" id="contacto-rapido">
+    <div class="container py-4">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-5">
+          <span class="badge-innova mb-2"><i class="bi bi-telephone-fill"></i> Atención Inmediata</span>
+          <h2 class="display-6 fw-bold mb-3">¿Listo para impulsar su empresa con tecnología?</h2>
+          <p class="text-muted mb-4">
+            Contáctenos hoy mismo para diseñar una formación a la medida de su equipo o comenzar la arquitectura de su próximo desarrollo de software.
+          </p>
+
+          <img src="assets/img/it-consulting.jpg" alt="Consultores de Tecnología InnovaIT" class="img-tech-frame mb-4" style="height: 220px; object-fit: cover;">
+
+          <div class="d-flex flex-column gap-3 mb-4">
+            <div class="d-flex align-items-center gap-3 p-3 rounded-3 bg-light border">
+              <div class="fs-3 text-primary"><i class="bi bi-whatsapp"></i></div>
+              <div>
+                <small class="text-muted d-block">WhatsApp Oficial</small>
+                <a href="https://wa.me/50368315695" class="fw-bold text-dark text-decoration-none fs-5">+503 68315695</a>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-center gap-3 p-3 rounded-3 bg-light border">
+              <div class="fs-3 text-primary"><i class="bi bi-envelope-at-fill"></i></div>
+              <div>
+                <small class="text-muted d-block">Correo Electrónico</small>
+                <a href="mailto:info@innovait.com.sv" class="fw-bold text-dark text-decoration-none">info@innovait.com.sv</a>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-center gap-3 p-3 rounded-3 bg-light border">
+              <div class="fs-3 text-primary"><i class="bi bi-geo-alt-fill"></i></div>
+              <div>
+                <small class="text-muted d-block">Ubicación y Cobertura</small>
+                <span class="fw-bold text-dark">El Salvador & Cobertura Regional Centroamérica</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="calc-card">
+            <h4 class="fw-bold mb-2">Solicitar Información o Cotización</h4>
+            <p class="text-muted small mb-4">Complete el formulario y le responderemos a la brevedad posible vía correo o WhatsApp.</p>
+
+            <div id="contactSuccessAlert" class="d-none mb-3"></div>
+
+            <form id="mainContactForm">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="contactName" class="form-label small fw-bold">Nombre Completo *</label>
+                  <input type="text" class="form-control" id="contactName" placeholder="Ej. Carlos Martínez" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="contactCompany" class="form-label small fw-bold">Empresa u Organización</label>
+                  <input type="text" class="form-control" id="contactCompany" placeholder="Ej. Corporación ABC">
+                </div>
+                <div class="col-md-6">
+                  <label for="contactEmail" class="form-label small fw-bold">Correo Electrónico *</label>
+                  <input type="email" class="form-control" id="contactEmail" placeholder="nombre@empresa.com" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="contactPhone" class="form-label small fw-bold">Teléfono / WhatsApp *</label>
+                  <input type="tel" class="form-control" id="contactPhone" placeholder="+503 1234 5678" required>
+                </div>
+                <div class="col-12">
+                  <label for="contactService" class="form-label small fw-bold">Servicio de Interés Principal</label>
+                  <select class="form-select" id="contactService">
+                    <option value="Formaciones y Capacitaciones TI">🎓 Formaciones y Capacitaciones TI a la Medida</option>
+                    <option value="Desarrollo de Software a la Medida">💻 Desarrollo de Software a la Medida</option>
+                    <option value="Ciberseguridad y Protección de Redes">🛡️ Ciberseguridad y Protección de Redes</option>
+                    <option value="Agentes de IA y Automatización">🤖 Agentes de IA & Automatización de Procesos</option>
+                    <option value="Infraestructura Cloud y Licenciamiento">☁️ Infraestructura Cloud & Licenciamiento</option>
+                    <option value="Outsourcing de Personal IT">👥 Outsourcing de Personal IT</option>
+                    <option value="Otro Requerimiento">Otro Requerimiento</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label for="contactMessage" class="form-label small fw-bold">Detalles del Requerimiento *</label>
+                  <textarea class="form-control" id="contactMessage" rows="3" placeholder="Describa brevemente lo que necesita (número de personas a capacitar, alcance del software, etc.)" required></textarea>
+                </div>
+                <div class="col-12 mt-4">
+                  <button type="submit" class="btn btn-innova-primary w-100 py-3">
+                    <i class="bi bi-send-fill"></i> Enviar Consulta y Conectar a WhatsApp
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Footer
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-5 mb-5">
+        <div class="col-lg-4">
+          <img src="assets/img/logo-innovait.png" alt="InnovaIT Logo" class="footer-brand-logo mb-3">
+          <p class="text-secondary small pe-lg-4">
+            <strong>InnovaIT Servicios y Soluciones</strong> es su aliado estratégico en El Salvador y la región para la formación de talento técnico de alto impacto, el desarrollo de software a la medida y soluciones de infraestructura TI seguras.
+          </p>
+          <div class="d-flex gap-3 text-white fs-5 mt-3">
+            <a href="https://wa.me/50368315695" class="text-white-50 text-decoration-none hover-cyan" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+            <a href="mailto:info@innovait.com.sv" class="text-white-50 text-decoration-none hover-cyan" title="Correo"><i class="bi bi-envelope"></i></a>
+            <a href="#" class="text-white-50 text-decoration-none hover-cyan" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-2">
+          <h6 class="text-white fw-bold mb-3">Navegación</h6>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="footer-link">Inicio</a></li>
+            <li><a href="formaciones.html" class="footer-link">Formaciones</a></li>
+            <li><a href="desarrollo-software.html" class="footer-link">Desarrollo Software</a></li>
+            <li><a href="soluciones-ti.html" class="footer-link">Soluciones TI</a></li>
+            <li><a href="contacto.html" class="footer-link">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-6 col-lg-3">
+          <h6 class="text-white fw-bold mb-3">Especialidades</h6>
+          <ul class="list-unstyled">
+            <li><a href="formaciones.html" class="footer-link">Capacitaciones In-Company</a></li>
+            <li><a href="desarrollo-software.html" class="footer-link">Sistemas Web & Móvil</a></li>
+            <li><a href="soluciones-ti.html#ciberseguridad" class="footer-link">Ciberseguridad</a></li>
+            <li><a href="soluciones-ti.html#ia-rpa" class="footer-link">Agentes IA & RPA</a></li>
+            <li><a href="soluciones-ti.html#infraestructura" class="footer-link">Cloud & Licenciamiento</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3">
+          <h6 class="text-white fw-bold mb-3">Contacto Oficial</h6>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt"></i>
+            <span class="small">El Salvador, Centroamérica</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-whatsapp"></i>
+            <span class="small">+503 68315695</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope"></i>
+            <span class="small">info@innovait.com.sv</span>
+          </div>
+          <div class="mt-3">
+            <span class="badge bg-primary-subtle text-info border border-info small">Horario: Lun - Vie 8:00 - 18:00</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-top border-secondary pt-4 text-center small text-secondary">
+        <p class="mb-0">
+          Copyright &copy; 2026 <strong>InnovaIT Servicios y Soluciones</strong>. Todos los derechos reservados.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5.3 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- Main Script -->
+  <script src="assets/js/main.js"></script>
+  <!-- AI Agent Chat Widget -->
+  <script src="assets/js/agent-chat.js"></script>
+</body>
+</html>

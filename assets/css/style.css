@@ -1,0 +1,653 @@
+/* ==========================================================================
+   InnovaIT Servicios y Soluciones - Main Stylesheet
+   Color Palette inspired by corporate logo:
+   Primary Cyan: #00a8e8 / #0ea5e9
+   Dark Slate/Charcoal: #1e293b / #0f172a
+   ========================================================================== */
+
+:root {
+  --innova-primary: #00a8e8;
+  --innova-primary-dark: #0088be;
+  --innova-primary-light: #e0f2fe;
+  --innova-primary-glow: rgba(0, 168, 232, 0.25);
+  --innova-dark: #0f172a;
+  --innova-dark-card: #1e293b;
+  --innova-slate: #334155;
+  --innova-muted: #64748b;
+  --innova-light: #f8fafc;
+  --innova-white: #ffffff;
+  --innova-gradient-primary: linear-gradient(135deg, #00a8e8 0%, #0072b5 100%);
+  --innova-gradient-dark: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  --innova-gradient-hero: linear-gradient(135deg, #0b1120 0%, #0f172a 60%, #112942 100%);
+  --innova-radius-sm: 8px;
+  --innova-radius-md: 14px;
+  --innova-radius-lg: 20px;
+  --innova-shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.06);
+  --innova-shadow-md: 0 10px 25px -5px rgba(15, 23, 42, 0.08), 0 8px 10px -6px rgba(15, 23, 42, 0.04);
+  --innova-shadow-lg: 0 20px 35px -8px rgba(0, 168, 232, 0.15);
+  --innova-shadow-hover: 0 20px 30px -10px rgba(0, 168, 232, 0.25);
+  --innova-transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  color: #334155;
+  background-color: #ffffff;
+  line-height: 1.65;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+  font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+  color: var(--innova-dark);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* ==========================================================================
+   Header & Navigation
+   ========================================================================== */
+.site-navbar {
+  background-color: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+  transition: var(--innova-transition);
+  padding: 0.75rem 0;
+  z-index: 1030;
+}
+
+.site-navbar.scrolled {
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.08);
+  padding: 0.5rem 0;
+}
+
+.brand-logo-img {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.brand-logo-img:hover {
+  transform: scale(1.02);
+}
+
+.nav-link {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #334155 !important;
+  padding: 0.5rem 1rem !important;
+  border-radius: var(--innova-radius-sm);
+  transition: var(--innova-transition);
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--innova-primary) !important;
+  background-color: var(--innova-primary-light);
+}
+
+/* ==========================================================================
+   Buttons & Badges
+   ========================================================================== */
+.btn-innova-primary {
+  background: var(--innova-gradient-primary);
+  color: #ffffff;
+  border: none;
+  font-weight: 600;
+  padding: 0.75rem 1.6rem;
+  border-radius: var(--innova-radius-sm);
+  box-shadow: 0 4px 14px rgba(0, 168, 232, 0.35);
+  transition: var(--innova-transition);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.btn-innova-primary:hover {
+  background: linear-gradient(135deg, #0088be 0%, #005a91 100%);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 168, 232, 0.45);
+}
+
+.btn-innova-outline {
+  border: 2px solid var(--innova-primary);
+  color: var(--innova-primary);
+  background: transparent;
+  font-weight: 600;
+  padding: 0.7rem 1.5rem;
+  border-radius: var(--innova-radius-sm);
+  transition: var(--innova-transition);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.btn-innova-outline:hover {
+  background: var(--innova-primary);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 168, 232, 0.25);
+}
+
+.btn-innova-dark {
+  background: var(--innova-dark);
+  color: #ffffff;
+  border: none;
+  font-weight: 600;
+  padding: 0.75rem 1.6rem;
+  border-radius: var(--innova-radius-sm);
+  transition: var(--innova-transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-innova-dark:hover {
+  background: #1e293b;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.badge-innova {
+  background-color: var(--innova-primary-light);
+  color: var(--innova-primary-dark);
+  font-weight: 700;
+  padding: 0.4rem 0.85rem;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.badge-innova-dark {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  font-weight: 700;
+  padding: 0.4rem 0.85rem;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* ==========================================================================
+   Hero Section
+   ========================================================================== */
+.hero-wrapper {
+  background: var(--innova-gradient-hero);
+  position: relative;
+  overflow: hidden;
+  padding: 6rem 0 5rem;
+  color: #ffffff;
+}
+
+.hero-wrapper::before {
+  content: '';
+  position: absolute;
+  top: -20%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0, 168, 232, 0.18) 0%, rgba(0,0,0,0) 70%);
+  pointer-events: none;
+}
+
+.hero-wrapper::after {
+  content: '';
+  position: absolute;
+  bottom: -20%;
+  left: -10%;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(14, 165, 233, 0.12) 0%, rgba(0,0,0,0) 70%);
+  pointer-events: none;
+}
+
+.hero-title {
+  font-size: clamp(2.3rem, 4.5vw, 3.8rem);
+  font-weight: 800;
+  line-height: 1.15;
+  color: #ffffff;
+}
+
+.text-gradient-cyan {
+  background: linear-gradient(135deg, #38bdf8 0%, #00a8e8 50%, #67e8f9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+  font-size: 1.15rem;
+  color: #94a3b8;
+  max-width: 620px;
+  line-height: 1.7;
+}
+
+/* ==========================================================================
+   Image Frames & Media Elements
+   ========================================================================== */
+.img-tech-frame {
+  border-radius: var(--innova-radius-md);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  box-shadow: 0 20px 40px -10px rgba(15, 23, 42, 0.4);
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: var(--innova-transition);
+}
+
+.img-tech-frame:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 25px 50px -10px rgba(0, 168, 232, 0.35);
+  border-color: rgba(56, 189, 248, 0.5);
+}
+
+.pillar-img-header {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: var(--innova-radius-sm);
+  margin-bottom: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hero-card {
+  background: rgba(30, 41, 59, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--innova-radius-lg);
+  padding: 2.2rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 1;
+}
+
+/* ==========================================================================
+   Pillars & Services Cards
+   ========================================================================== */
+.card-service {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: var(--innova-radius-md);
+  padding: 2.2rem;
+  transition: var(--innova-transition);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-service::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: transparent;
+  transition: var(--innova-transition);
+}
+
+.card-service:hover {
+  transform: translateY(-8px);
+  border-color: #bae6fd;
+  box-shadow: var(--innova-shadow-hover);
+}
+
+.card-service:hover::after {
+  background: var(--innova-gradient-primary);
+}
+
+.service-icon-box {
+  width: 62px;
+  height: 62px;
+  border-radius: var(--innova-radius-sm);
+  background: var(--innova-primary-light);
+  color: var(--innova-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  transition: var(--innova-transition);
+}
+
+.card-service:hover .service-icon-box {
+  background: var(--innova-primary);
+  color: #ffffff;
+  transform: scale(1.08) rotate(3deg);
+}
+
+/* ==========================================================================
+   Pillar Highlights (Dual Pillars: Formación & Software)
+   ========================================================================== */
+.pillar-highlight-card {
+  border-radius: var(--innova-radius-lg);
+  padding: 2.5rem;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.pillar-software {
+  background: linear-gradient(145deg, #0f172a 0%, #1e293b 100%);
+  color: #ffffff;
+  border: 1px solid rgba(56, 189, 248, 0.2);
+}
+
+.pillar-software h3, .pillar-software p {
+  color: #ffffff;
+}
+
+.pillar-training {
+  background: linear-gradient(145deg, #f0f9ff 0%, #e0f2fe 100%);
+  color: var(--innova-dark);
+  border: 1px solid #bae6fd;
+}
+
+.check-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.check-item i {
+  color: var(--innova-primary);
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+/* ==========================================================================
+   Interactive Quote / Calculator Section
+   ========================================================================== */
+.calc-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: var(--innova-radius-lg);
+  padding: 2.5rem;
+  box-shadow: var(--innova-shadow-md);
+}
+
+.form-check-card {
+  border: 2px solid #e2e8f0;
+  border-radius: var(--innova-radius-sm);
+  padding: 1rem 1.25rem;
+  cursor: pointer;
+  transition: var(--innova-transition);
+}
+
+.form-check-card:hover {
+  border-color: #7dd3fc;
+  background-color: #f0f9ff;
+}
+
+.form-check-input:checked ~ .form-check-card-label {
+  color: var(--innova-primary);
+  font-weight: 700;
+}
+
+/* ==========================================================================
+   AI Agent Widget & Floating Chat (InnovaBot)
+   ========================================================================== */
+.agent-widget-container {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 1080;
+}
+
+.agent-trigger-btn {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--innova-gradient-primary);
+  color: #ffffff;
+  border: none;
+  box-shadow: 0 10px 25px rgba(0, 168, 232, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: var(--innova-transition);
+  position: relative;
+}
+
+.agent-trigger-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 12px 30px rgba(0, 168, 232, 0.55);
+}
+
+.agent-badge-pulse {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 16px;
+  height: 16px;
+  background-color: #22c55e;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  animation: pulse-ring 2s infinite;
+}
+
+@keyframes pulse-ring {
+  0% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); }
+  70% { box-shadow: 0 0 0 8px rgba(34, 197, 94, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+}
+
+.agent-chat-window {
+  position: fixed;
+  bottom: 100px;
+  right: 24px;
+  width: 380px;
+  max-width: calc(100vw - 32px);
+  height: 540px;
+  max-height: calc(100vh - 120px);
+  background: #ffffff;
+  border-radius: var(--innova-radius-md);
+  box-shadow: 0 25px 60px -15px rgba(15, 23, 42, 0.35);
+  border: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 1080;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px) scale(0.95);
+  transition: var(--innova-transition);
+}
+
+.agent-chat-window.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+}
+
+.chat-header {
+  background: var(--innova-gradient-dark);
+  color: #ffffff;
+  padding: 1.1rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.chat-header-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.chat-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--innova-primary);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.chat-messages-body {
+  flex: 1;
+  padding: 1.25rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  background-color: #f8fafc;
+}
+
+.chat-bubble {
+  max-width: 82%;
+  padding: 0.75rem 1rem;
+  border-radius: 14px;
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+.chat-bubble-agent {
+  background: #ffffff;
+  color: #1e293b;
+  align-self: flex-start;
+  border: 1px solid #e2e8f0;
+  border-bottom-left-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.chat-bubble-user {
+  background: var(--innova-primary);
+  color: #ffffff;
+  align-self: flex-end;
+  border-bottom-right-radius: 4px;
+}
+
+.chat-options-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.35rem;
+}
+
+.chat-option-pill {
+  background-color: #ffffff;
+  border: 1.5px solid #00a8e8;
+  color: #0077b6;
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 0.4rem 0.8rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+}
+
+.chat-option-pill:hover {
+  background-color: #00a8e8;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.chat-footer {
+  padding: 0.75rem 1rem;
+  background: #ffffff;
+  border-top: 1px solid #e2e8f0;
+}
+
+.chat-whatsapp-btn {
+  background-color: #25d366;
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: var(--innova-radius-sm);
+  font-size: 0.88rem;
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.6rem;
+  text-decoration: none;
+  transition: var(--innova-transition);
+}
+
+.chat-whatsapp-btn:hover {
+  background-color: #1eb954;
+  color: #ffffff;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+.site-footer {
+  background: #0b1120;
+  color: #94a3b8;
+  padding: 5rem 0 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-brand-logo {
+  max-height: 48px;
+  filter: brightness(0) invert(1);
+}
+
+.footer-link {
+  color: #94a3b8;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.footer-link:hover {
+  color: var(--innova-primary);
+  transform: translateX(3px);
+}
+
+.footer-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 0.85rem;
+  color: #cbd5e1;
+}
+
+.footer-contact-item i {
+  color: var(--innova-primary);
+  font-size: 1.15rem;
+  margin-top: 0.2rem;
+}
+
+/* ==========================================================================
+   Responsive Utilities
+   ========================================================================== */
+@media (max-width: 768px) {
+  .hero-wrapper {
+    padding: 4.5rem 0 3.5rem;
+  }
+  .agent-chat-window {
+    right: 16px;
+    bottom: 90px;
+    width: calc(100vw - 32px);
+    height: 490px;
+  }
+}

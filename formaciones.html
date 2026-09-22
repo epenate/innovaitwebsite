@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Catálogo de Formaciones y Capacitaciones Tecnológicas a la Medida de InnovaIT. Cursos en Desarrollo de Software, Ciberseguridad, Cloud Computing y Agentes de IA en El Salvador.">
+  <title>Formaciones Tecnológicas a la Medida | InnovaIT Servicios y Soluciones</title>
+
+  <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg site-navbar fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="assets/img/logo-innovait.png" alt="InnovaIT Servicios y Soluciones" class="brand-logo-img">
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Abrir navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="formaciones.html">Formaciones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="desarrollo-software.html">Desarrollo de Software</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="soluciones-ti.html">Soluciones TI</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+            <a href="https://wa.me/50368315695?text=Hola%20InnovaIT%2C%20quisiera%20cotizar%20una%20formaci%C3%B3n%20para%20mi%20empresa." target="_blank" rel="noopener noreferrer" class="btn btn-innova-primary">
+              <i class="bi bi-whatsapp"></i> WhatsApp Directo
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Formaciones -->
+  <header class="hero-wrapper" style="padding: 5.5rem 0 4rem;">
+    <div class="container position-relative" style="z-index: 2;">
+      <div class="row align-items-center g-5 pt-4">
+        <div class="col-lg-7">
+          <div class="badge-innova-dark mb-3">
+            <i class="bi bi-mortarboard-fill text-info me-1"></i> Capacitación Continua & Bootcamps Corporativos
+          </div>
+          <h1 class="hero-title mb-3">
+            Formaciones Tecnológicas <span class="text-gradient-cyan">a la Medida</span> de su Empresa
+          </h1>
+          <p class="hero-subtitle mb-4">
+            Potenciamos las competencias técnicas y la productividad de su equipo con programas formativos actualizados, enfocados en casos prácticos y dictados por especialistas del sector.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#catalogo" class="btn btn-innova-primary">
+              <i class="bi bi-grid-fill"></i> Explorar Cursos & Talleres
+            </a>
+            <button onclick="window.openInnovaBot('training')" class="btn btn-outline-info">
+              <i class="bi bi-robot"></i> Asesoría con InnovaBot
+            </button>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="position-relative">
+            <img src="assets/img/training-classroom.jpg" alt="Capacitaciones Tecnológicas In-Company" class="img-tech-frame mb-3">
+            <div class="p-4 rounded-4" style="background: rgba(30, 41, 59, 0.85); border: 1px solid rgba(56, 189, 248, 0.25);">
+              <h5 class="fw-bold text-white mb-3"><i class="bi bi-check2-all text-info me-2"></i>Nuestra Metodología</h5>
+              <ul class="list-unstyled text-white-50 small mb-0 d-flex flex-column gap-2">
+                <li><i class="bi bi-check-circle-fill text-info me-2"></i><strong>Diagnóstico previo:</strong> Evaluamos el nivel actual del equipo.</li>
+                <li><i class="bi bi-check-circle-fill text-info me-2"></i><strong>Temarios adaptados:</strong> Alineados a las tecnologías de su negocio.</li>
+                <li><i class="bi bi-check-circle-fill text-info me-2"></i><strong>Modalidad flexible:</strong> Presencial In-Company o Virtual en vivo.</li>
+                <li><i class="bi bi-check-circle-fill text-info me-2"></i><strong>Certificación:</strong> Acreditación de horas y proyectos evaluados.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Métricas de Impacto -->
+  <section class="py-4 bg-light border-bottom">
+    <div class="container">
+      <div class="row g-4 text-center">
+        <div class="col-6 col-md-3">
+          <div class="fs-2 fw-bold" style="color: #00a8e8;">100%</div>
+          <p class="text-muted small mb-0">Contenido Práctico Aplicado</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="fs-2 fw-bold text-dark">+15</div>
+          <p class="text-muted small mb-0">Rutas de Especialización TI</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="fs-2 fw-bold" style="color: #00a8e8;">In-Company</div>
+          <p class="text-muted small mb-0">Adaptado a la Realidad Corporativa</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="fs-2 fw-bold text-dark">Soporte</div>
+          <p class="text-muted small mb-0">Seguimiento Post-Capacitación</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Catálogo de Cursos & Rutas -->
+  <section class="py-5" id="catalogo">
+    <div class="container py-4">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <span class="badge-innova mb-2"><i class="bi bi-journal-bookmark-fill"></i> Catálogo Académico</span>
+        <h2 class="display-6 fw-bold">Especialidades Formativas para Empresas</h2>
+        <p class="text-muted">Elija el área técnica que su organización necesita fortalecer o solicite un temario personalizado.</p>
+      </div>
+
+      <!-- Area 1: Desarrollo de Software -->
+      <div class="mb-5">
+        <div class="d-flex align-items-center gap-2 mb-4 pb-2 border-bottom">
+          <span class="badge bg-primary fs-6 p-2"><i class="bi bi-code-slash"></i></span>
+          <h3 class="fw-bold mb-0">Desarrollo de Software & Programación</h3>
+        </div>
+
+        <div class="row g-4">
+          <!-- Curso 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card-service">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="badge bg-info-subtle text-info fw-bold">30 Horas</span>
+                <span class="badge bg-light text-dark border">Intermedio</span>
+              </div>
+              <h5 class="fw-bold mb-2">Desarrollo Web Fullstack Moderno</h5>
+              <p class="text-muted small mb-3">
+                Construcción de aplicaciones web interactivas con JavaScript moderno, React, Node.js, Express y bases de datos relacionales y NoSQL.
+              </p>
+              <div class="small text-secondary mb-4">
+                <strong>Habilidades clave:</strong> SPA, APIs RESTful, autenticación JWT, despliegue en la nube.
+              </div>
+              <button onclick="solicitarTemario('Desarrollo Web Fullstack Moderno')" class="btn btn-outline-primary btn-sm w-100 mt-auto">
+                <i class="bi bi-file-earmark-text"></i> Solicitar Temario & Cotización
+              </button>
+            </div>
+          </div>
+
+          <!-- Curso 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card-service">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="badge bg-info-subtle text-info fw-bold">25 Horas</span>
+                <span class="badge bg-light text-dark border">Todos los niveles</span>
+              </div>
+              <h5 class="fw-bold mb-2">Python para Automatización & Datos</h5>
+              <p class="text-muted small mb-3">
+                Automatización de tareas repetitivas, manipulación y análisis de hojas de cálculo, scripts de integración y web scraping aplicado.
+              </p>
+              <div class="small text-secondary mb-4">
+                <strong>Habilidades clave:</strong> Pandas, scripting, manejo de APIs, automatización de reportes.
+              </div>
+              <button onclick="solicitarTemario('Python para Automatización & Datos')" class="btn btn-outline-primary btn-sm w-100 mt-auto">
+                <i class="bi bi-file-earmark-text"></i> Solicitar Temario & Cotización
+              </button>
+            </div>
+          </div>
+
+          <!-- Curso 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card-service">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="badge bg-info-subtle text-info fw-bold">35 Horas</span>
+                <span class="badge bg-light text-dark border">Avanzado</span>
+              </div>
+              <h5 class="fw-bold mb-2">Java Empresarial con Spring Boot</h5>
+              <p class="text-muted small mb-3">
+                Arquitectura de microservicios robustos y aplicaciones bancarias o corporativas escalables con Spring Boot, Spring Security y Docker.
+              </p>
+              <div class="small text-secondary mb-4">
+                <strong>Habilidades clave:</strong> Microservicios, Hibernate/JPA, seguridad OAuth2, pruebas unitarias.
+              </div>
+              <button onclick="solicitarTemario('Java Empresarial con Spring Boot')" class="btn btn-outline-primary btn-sm w-100 mt-auto">
+                <i class="bi bi-file-earmark-text"></i> Solicitar Temario & Cotización
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Area 2: Ciberseguridad -->
+      <div class="mb-5">
+        <div class="d-flex align-items-center gap-2 mb-4 pb-2 border-bottom">
+          <span class="badge bg-dark fs-6 p-2"><i class="bi bi-shield-lock-fill"></i></span>
+          <h3 class="fw-bold mb-0">Ciberseguridad & Protección Corporativa</h3>
+        </div>
+
+        <div class="row g-4">
+          <!-- Curso 4 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card-service">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="badge bg-danger-subtle text-danger fw-bold">24 Horas</span>
+                <span class="badge bg-light text-dark border">Fundamental</span>
+              </div>
+              <h5 class="fw-bold mb-2">Ciberseguridad Defensiva & Redes</h5>
+              <p class="text-muted small mb-3">
+                Configuración de defensas perimetrales, gestión de firewalls, detección de intrusos y hardening de sistemas operativos Windows y Linux.
+              </p>
+              <div class="small text-secondary mb-4">
+                <strong>Habilidades clave:</strong> Análisis de tráfico de red, mitigación de malware, políticas de seguridad.
+              </div>
+              <button onclick="solicitarTemario('Ciberseguridad Defensiva & Redes')" class="btn btn-outline-primary btn-sm w-100 mt-auto">
+                <i class="bi bi-file-earmark-text"></i> Solicitar Temario & Cotización
+              </button>
+            </div>
+          </div>
+
+          <!-- Curso 5 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card-service">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="badge bg-danger-subtle text-danger fw-bold">20 Horas</span>
+                <span class="badge bg-light text-dark border">Desarrolladores</span>
+              </div>
+              <h5 class="fw-bold mb-2">Seguridad en Aplicaciones (OWASP Top 10)</h5>
+              <p class="text-muted small mb-3">
+                Buenas prácticas de desarrollo seguro (DevSecOps) para prevenir inyecciones SQL, XSS, fallos de autenticación y fugas de datos críticos.
+              </p>
+              <div class="small text-secondary mb-4">
+                <strong>Habilidades clave:</strong> Auditoría de código, pentesting web básico, remediación de fallas.
+              </div>
+              <button onclick="solicitarTemario('Seguridad en Aplicaciones (OWASP Top 10)')" class="btn btn-outline-primary btn-sm w-100 mt-auto">
+                <i class="bi bi-file-earmark-text"></i> Solicitar Temario & Cotización
+              </button>
+            </div>
+          </div>
+
+          <!-- Curso 6 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card-service">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="badge bg-warning-subtle text-dark fw-bold">12 Horas</span>
+                <span class="badge bg-light text-dark border">Todo el Personal</span>
+              </div>
+              <h5 class="fw-bold mb-2">Concientización contra Phishing & Fraudes</h5>
+              <p class="text-muted small mb-3">
+                Taller interactivo de concientización para colaboradores no técnicos: cómo identificar ataques de ingeniería social, phishing y ransomware.
+              </p>
+              <div class="small text-secondary mb-4">
+                <strong>Habilidades clave:</strong> Simulación de ataques, contraseñas seguras, protección de accesos.
+              </div>
+              <button onclick="solicitarTemario('Concientización contra Phishing & Fraudes')" class="btn btn-outline-primary btn-sm w-100 mt-auto">
+                <i class="bi bi-file-earmark-text"></i> Solicitar Temario & Cotización
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Area 3: Cloud & Agentes IA -->
+      <div>
+        <div class="d-flex align-items-center gap-2 mb-4 pb-2 border-bottom">
+          <span class="badge bg-info fs-6 p-2"><i class="bi bi-cpu-fill"></i></span>
+          <h3 class="fw-bold mb-0">Cloud, DevOps & Agentes de IA</h3>
+        </div>
+
+        <div class="row g-4">
+          <!-- Curso 7 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card-service">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="badge bg-info-subtle text-info fw-bold">25 Horas</span>
+                <span class="badge bg-light text-dark border">TI & Cloud</span>
+              </div>
+              <h5 class="fw-bold mb-2">Arquitectura Cloud (AWS & Azure)</h5>
+              <p class="text-muted small mb-3">
+                Diseño e implementación de infraestructuras elásticas, seguras y de alta disponibilidad utilizando los servicios principales de AWS y Azure.
+              </p>
+              <div class="small text-secondary mb-4">
+                <strong>Habilidades clave:</strong> EC2/VMs, VPCs, almacenamiento S3/Blob, bases de datos gestionadas.
+              </div>
+              <button onclick="solicitarTemario('Arquitectura Cloud (AWS & Azure)')" class="btn btn-outline-primary btn-sm w-100 mt-auto">
+                <i class="bi bi-file-earmark-text"></i> Solicitar Temario & Cotización
+              </button>
+            </div>
+          </div>
+
+          <!-- Curso 8 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card-service">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="badge bg-info-subtle text-info fw-bold">20 Horas</span>
+                <span class="badge bg-light text-dark border">Negocios & TI</span>
+              </div>
+              <h5 class="fw-bold mb-2">Implementación de Agentes de IA & LLMs</h5>
+              <p class="text-muted small mb-3">
+                Cómo diseñar asistentes inteligentes, chatbots avanzados y flujos autónomos utilizando modelos de lenguaje, embeddings y automatización.
+              </p>
+              <div class="small text-secondary mb-4">
+                <strong>Habilidades clave:</strong> Prompt engineering, API integration, RAG, automatización de atención.
+              </div>
+              <button onclick="solicitarTemario('Implementación de Agentes de IA & LLMs')" class="btn btn-outline-primary btn-sm w-100 mt-auto">
+                <i class="bi bi-file-earmark-text"></i> Solicitar Temario & Cotización
+              </button>
+            </div>
+          </div>
+
+          <!-- Curso 9 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card-service">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="badge bg-info-subtle text-info fw-bold">18 Horas</span>
+                <span class="badge bg-light text-dark border">Analítica</span>
+              </div>
+              <h5 class="fw-bold mb-2">Power BI & Analítica de Negocios</h5>
+              <p class="text-muted small mb-3">
+                Creación de tableros de control ejecutivos y análisis de datos en tiempo real con Power BI, DAX y modelado dimensional.
+              </p>
+              <div class="small text-secondary mb-4">
+                <strong>Habilidades clave:</strong> Transformación con Power Query, visualizaciones de KPIs, alertas automáticas.
+              </div>
+              <button onclick="solicitarTemario('Power BI & Analítica de Negocios')" class="btn btn-outline-primary btn-sm w-100 mt-auto">
+                <i class="bi bi-file-earmark-text"></i> Solicitar Temario & Cotización
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner Formación a la Medida -->
+  <section class="py-5" style="background: linear-gradient(135deg, #0b1120 0%, #1e293b 100%); color: #ffffff;">
+    <div class="container text-center py-4">
+      <h2 class="display-6 fw-bold text-white mb-3">¿No encuentra la tecnología exacta que necesita?</h2>
+      <p class="text-white-50 max-w-700 mx-auto mb-4">
+        Diseñamos planes de formación 100% personalizados según el stack tecnológico o los objetivos comerciales de su empresa.
+      </p>
+      <div class="d-flex justify-content-center gap-3 flex-wrap">
+        <a href="https://wa.me/50368315695?text=Hola%20InnovaIT%2C%20requiero%20una%20capacitaci%C3%B3n%20personalizada%20para%20mi%20equipo." target="_blank" class="btn btn-innova-primary">
+          <i class="bi bi-whatsapp"></i> Hablar con Coordinación Académica
+        </a>
+        <a href="contacto.html" class="btn btn-innova-outline text-white border-light">
+          <i class="bi bi-envelope"></i> Enviar Requerimiento por Correo
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal para Solicitar Temario -->
+  <div class="modal fade" id="syllabusModal" tabindex="-1" aria-labelledby="syllabusModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0 shadow-lg">
+        <div class="modal-header bg-dark text-white">
+          <h5 class="modal-title" id="syllabusModalLabel"><i class="bi bi-file-earmark-pdf-fill text-info me-2"></i>Solicitar Temario & Precios</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <form id="syllabusRequestForm">
+            <div class="mb-3">
+              <label class="form-label small fw-bold">Curso Seleccionado</label>
+              <input type="text" class="form-control" id="syllabusCourseName" readonly>
+            </div>
+            <div class="mb-3">
+              <label class="form-label small fw-bold">Empresa u Organización</label>
+              <input type="text" class="form-control" id="syllabusCompany" placeholder="Ej. Mi Empresa S.A." required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label small fw-bold">Cantidad estimada de participantes</label>
+              <select class="form-select" id="syllabusAttendees">
+                <option value="1 a 3">1 a 3 personas (Individual / Equipo pequeño)</option>
+                <option value="4 a 10" selected>4 a 10 personas (Grupo estándar)</option>
+                <option value="11 a 25">11 a 25 personas (Área completa)</option>
+                <option value="+25">Más de 25 personas (Plan corporativo masivo)</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-innova-primary w-100 py-2 mt-2">
+              <i class="bi bi-whatsapp"></i> Enviar Solicitud a WhatsApp (+503 68315695)
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-5 mb-5">
+        <div class="col-lg-4">
+          <img src="assets/img/logo-innovait.png" alt="InnovaIT Logo" class="footer-brand-logo mb-3">
+          <p class="text-secondary small pe-lg-4">
+            <strong>InnovaIT Servicios y Soluciones</strong>: Expertos en formación de talento técnico y desarrollo de soluciones de software a la medida para El Salvador y la región.
+          </p>
+        </div>
+        <div class="col-sm-6 col-lg-2">
+          <h6 class="text-white fw-bold mb-3">Navegación</h6>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="footer-link">Inicio</a></li>
+            <li><a href="formaciones.html" class="footer-link">Formaciones</a></li>
+            <li><a href="desarrollo-software.html" class="footer-link">Desarrollo Software</a></li>
+            <li><a href="soluciones-ti.html" class="footer-link">Soluciones TI</a></li>
+            <li><a href="contacto.html" class="footer-link">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <h6 class="text-white fw-bold mb-3">Cursos Populares</h6>
+          <ul class="list-unstyled">
+            <li><a href="#catalogo" class="footer-link">Fullstack con React</a></li>
+            <li><a href="#catalogo" class="footer-link">Ciberseguridad Defensiva</a></li>
+            <li><a href="#catalogo" class="footer-link">Python & Automatización</a></li>
+            <li><a href="#catalogo" class="footer-link">Agentes IA & LLMs</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <h6 class="text-white fw-bold mb-3">Contacto</h6>
+          <div class="footer-contact-item">
+            <i class="bi bi-whatsapp"></i>
+            <span class="small">+503 68315695</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope"></i>
+            <span class="small">info@innovait.com.sv</span>
+          </div>
+        </div>
+      </div>
+      <div class="border-top border-secondary pt-4 text-center small text-secondary">
+        <p class="mb-0">Copyright &copy; 2026 <strong>InnovaIT Servicios y Soluciones</strong>. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Helper JS function for modal -->
+  <script>
+    function solicitarTemario(curso) {
+      document.getElementById('syllabusCourseName').value = curso;
+      const modal = new bootstrap.Modal(document.getElementById('syllabusModal'));
+      modal.show();
+    }
+  </script>
+
+  <!-- Bootstrap 5.3 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- Main Script -->
+  <script src="assets/js/main.js"></script>
+  <!-- AI Agent Chat Widget -->
+  <script src="assets/js/agent-chat.js"></script>
+</body>
+</html>

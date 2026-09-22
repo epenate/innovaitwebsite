@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Desarrollo de Software a la Medida en El Salvador por InnovaIT. Creación de plataformas web, aplicaciones móviles, sistemas empresariales ERP/CRM y microservicios escalables.">
+  <title>Desarrollo de Software a la Medida | InnovaIT Servicios y Soluciones</title>
+
+  <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg site-navbar fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="assets/img/logo-innovait.png" alt="InnovaIT Servicios y Soluciones" class="brand-logo-img">
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Abrir navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="formaciones.html">Formaciones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="desarrollo-software.html">Desarrollo de Software</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="soluciones-ti.html">Soluciones TI</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+            <a href="https://wa.me/50368315695?text=Hola%20InnovaIT%2C%20quisiera%20cotizar%20un%20proyecto%20de%20desarrollo%20de%20software." target="_blank" rel="noopener noreferrer" class="btn btn-innova-primary">
+              <i class="bi bi-whatsapp"></i> WhatsApp Directo
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Desarrollo de Software -->
+  <header class="hero-wrapper" style="padding: 5.5rem 0 4rem;">
+    <div class="container position-relative" style="z-index: 2;">
+      <div class="row align-items-center g-5 pt-4">
+        <div class="col-lg-7">
+          <div class="badge-innova-dark mb-3">
+            <i class="bi bi-code-square text-info me-1"></i> Software Factory & Arquitectura Digital
+          </div>
+          <h1 class="hero-title mb-3">
+            Ingeniería de Software <span class="text-gradient-cyan">a la Medida</span> de sus Operaciones
+          </h1>
+          <p class="hero-subtitle mb-4">
+            Construimos aplicaciones web, móviles y empresariales que no solo resuelven problemas hoy, sino que están preparadas para escalar junto con el crecimiento de su empresa.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#cotizador" class="btn btn-innova-primary">
+              <i class="bi bi-calculator-fill"></i> Cotizador Interactivo
+            </a>
+            <button onclick="window.openInnovaBot('software')" class="btn btn-outline-info">
+              <i class="bi bi-robot"></i> Asesoría Técnica con InnovaBot
+            </button>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="position-relative">
+            <img src="assets/img/software-development.jpg" alt="Ingeniería de Software a la Medida InnovaIT" class="img-tech-frame mb-3">
+            <div class="p-4 rounded-4" style="background: rgba(30, 41, 59, 0.85); border: 1px solid rgba(56, 189, 248, 0.25);">
+              <h5 class="fw-bold text-white mb-3"><i class="bi bi-layers-fill text-info me-2"></i>Por qué a la Medida</h5>
+              <ul class="list-unstyled text-white-50 small mb-0 d-flex flex-column gap-2">
+                <li><i class="bi bi-check-circle-fill text-info me-2"></i><strong>Cero licencias recurrentes caras:</strong> El software es 100% de su propiedad.</li>
+                <li><i class="bi bi-check-circle-fill text-info me-2"></i><strong>Procesos exactos:</strong> La app se adapta a su negocio, no su negocio a la app.</li>
+                <li><i class="bi bi-check-circle-fill text-info me-2"></i><strong>Seguridad & Cumplimiento:</strong> Diseñado con estándares de protección de datos.</li>
+                <li><i class="bi bi-check-circle-fill text-info me-2"></i><strong>Integración nativa:</strong> Conecta con sus sistemas existentes y facturación.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Tipos de Soluciones de Software -->
+  <section class="py-5">
+    <div class="container py-4">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <span class="badge-innova mb-2"><i class="bi bi-terminal-fill"></i> Soluciones que Desarrollamos</span>
+        <h2 class="display-6 fw-bold">Especialidades en Desarrollo Tecnológico</h2>
+        <p class="text-muted">Desde plataformas transaccionales hasta microservicios de alto tráfico, aplicamos código limpio y metodologías ágiles.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Tipo 1: Web Apps & SaaS -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card-service">
+            <div class="service-icon-box">
+              <i class="bi bi-window-fullscreen"></i>
+            </div>
+            <h4 class="fw-bold mb-2">Plataformas Web & SaaS</h4>
+            <p class="text-muted small mb-3">
+              Aplicaciones web progresivas (PWA) y portales para clientes, proveedores o colaboradores con carga ultra rápida y diseño responsive.
+            </p>
+            <div class="small text-secondary mb-4">
+              <strong>Stack tecnológico:</strong> React, Next.js, Node.js, Python, PostgreSQL, Redis.
+            </div>
+            <a href="https://wa.me/50368315695?text=Hola%20InnovaIT%2C%20deseo%20cotizar%20una%20Plataforma%20Web%20o%20SaaS." target="_blank" class="mt-auto fw-bold text-decoration-none" style="color: #00a8e8;">
+              Cotizar plataforma <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Tipo 2: Mobile Apps -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card-service">
+            <div class="service-icon-box">
+              <i class="bi bi-phone-fill"></i>
+            </div>
+            <h4 class="fw-bold mb-2">Aplicaciones Móviles</h4>
+            <p class="text-muted small mb-3">
+              Desarrollo de apps para iOS y Android fluidas, intuitivas y conectadas en tiempo real para venta, delivery, operaciones de campo o logística.
+            </p>
+            <div class="small text-secondary mb-4">
+              <strong>Stack tecnológico:</strong> Flutter, React Native, Firebase, Swift, Kotlin.
+            </div>
+            <a href="https://wa.me/50368315695?text=Hola%20InnovaIT%2C%20deseo%20cotizar%20una%20Aplicaci%C3%B3n%20M%C3%B3vil." target="_blank" class="mt-auto fw-bold text-decoration-none" style="color: #00a8e8;">
+              Cotizar app móvil <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Tipo 3: Sistemas ERP / CRM a la Medida -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card-service">
+            <div class="service-icon-box">
+              <i class="bi bi-buildings-fill"></i>
+            </div>
+            <h4 class="fw-bold mb-2">Sistemas ERP / CRM a la Medida</h4>
+            <p class="text-muted small mb-3">
+              Módulos personalizados para facturación electrónica en El Salvador, control de inventario, recursos humanos y gestión de clientes sin limitaciones.
+            </p>
+            <div class="small text-secondary mb-4">
+              <strong>Stack tecnológico:</strong> Spring Boot, .NET Core, Django, SQL Server, Docker.
+            </div>
+            <a href="https://wa.me/50368315695?text=Hola%20InnovaIT%2C%20deseo%20cotizar%20un%20Sistema%20Empresarial%20ERP%2FCRM." target="_blank" class="mt-auto fw-bold text-decoration-none" style="color: #00a8e8;">
+              Cotizar ERP/CRM <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Tipo 4: Integración de APIs & Facturación Electrónica -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card-service">
+            <div class="service-icon-box">
+              <i class="bi bi-diagram-3-fill"></i>
+            </div>
+            <h4 class="fw-bold mb-2">Integración de APIs & DTE</h4>
+            <p class="text-muted small mb-3">
+              Conexión entre sistemas dispares, pasarelas de pago locales/internacionales y facturación electrónica oficial (DTE El Salvador).
+            </p>
+            <div class="small text-secondary mb-4">
+              <strong>Stack tecnológico:</strong> REST, GraphQL, Webhooks, Seguridad OAuth2, JSON.
+            </div>
+            <a href="https://wa.me/50368315695?text=Hola%20InnovaIT%2C%20deseo%20cotizar%20una%20Integraci%C3%B3n%20de%20APIs%20o%20DTE." target="_blank" class="mt-auto fw-bold text-decoration-none" style="color: #00a8e8;">
+              Cotizar integración <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Tipo 5: Software con Agentes de IA -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card-service">
+            <div class="service-icon-box">
+              <i class="bi bi-robot"></i>
+            </div>
+            <h4 class="fw-bold mb-2">Sistemas con Agentes de IA</h4>
+            <p class="text-muted small mb-3">
+              Incorpore inteligencia predictiva, asistentes conversacionales para WhatsApp y análisis automático de documentos dentro de su propio software.
+            </p>
+            <div class="small text-secondary mb-4">
+              <strong>Stack tecnológico:</strong> OpenAI API, LangChain, embeddings vectoriales, Python.
+            </div>
+            <a href="https://wa.me/50368315695?text=Hola%20InnovaIT%2C%20deseo%20integrar%20Agentes%20de%20IA%20en%20nuestro%20software." target="_blank" class="mt-auto fw-bold text-decoration-none" style="color: #00a8e8;">
+              Cotizar solución IA <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Tipo 6: Modernización y Migración Cloud -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card-service">
+            <div class="service-icon-box">
+              <i class="bi bi-cloud-arrow-up-fill"></i>
+            </div>
+            <h4 class="fw-bold mb-2">Modernización Legacy a Cloud</h4>
+            <p class="text-muted small mb-3">
+              Rescatamos y migramos aplicaciones antiguas hacia contenedores modernos y arquitecturas serverless seguras en AWS, Azure o GCP.
+            </p>
+            <div class="small text-secondary mb-4">
+              <strong>Stack tecnológico:</strong> Docker, Kubernetes, CI/CD pipelines, Terraform.
+            </div>
+            <a href="https://wa.me/50368315695?text=Hola%20InnovaIT%2C%20deseo%20modernizar%20un%20software%20legacy." target="_blank" class="mt-auto fw-bold text-decoration-none" style="color: #00a8e8;">
+              Cotizar modernización <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Metodología de Desarrollo en 5 Pasos -->
+  <section class="py-5 bg-light">
+    <div class="container py-4">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <span class="badge-innova mb-2"><i class="bi bi-kanban-fill"></i> Metodología Ágil</span>
+        <h2 class="display-6 fw-bold">Cómo Trabajamos su Proyecto</h2>
+        <p class="text-muted">Garantizamos entregas continuas, comunicación transparente y control total del avance en cada fase.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="p-4 bg-white rounded-3 border h-100 shadow-sm">
+            <div class="badge bg-primary fs-6 p-2 rounded-circle mb-3">01</div>
+            <h5 class="fw-bold">Descubrimiento & Alcance</h5>
+            <p class="text-muted small mb-0">Reunión de levantamiento con sus líderes de proceso para definir objetivos, casos de uso y requerimientos técnicos clave.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-4 bg-white rounded-3 border h-100 shadow-sm">
+            <div class="badge bg-primary fs-6 p-2 rounded-circle mb-3">02</div>
+            <h5 class="fw-bold">Diseño UX/UI & Prototipo</h5>
+            <p class="text-muted small mb-0">Construcción de wireframes y maquetas interactivas para que valide la experiencia visual antes de escribir la primera línea de código.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-4 bg-white rounded-3 border h-100 shadow-sm">
+            <div class="badge bg-primary fs-6 p-2 rounded-circle mb-3">03</div>
+            <h5 class="fw-bold">Desarrollo Iterativo (Sprints)</h5>
+            <p class="text-muted small mb-0">Desarrollo modular con revisiones periódicas cada 2 semanas para que usted pruebe avances tangibles continuamente.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="p-4 bg-white rounded-3 border h-100 shadow-sm">
+            <div class="badge bg-primary fs-6 p-2 rounded-circle mb-3">04</div>
+            <h5 class="fw-bold">Pruebas de Calidad (QA) & Ciberseguridad</h5>
+            <p class="text-muted small mb-0">Validación rigurosa de funcionalidad, pruebas de carga, análisis de vulnerabilidades y verificación en múltiples dispositivos.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="p-4 bg-white rounded-3 border h-100 shadow-sm">
+            <div class="badge bg-primary fs-6 p-2 rounded-circle mb-3">05</div>
+            <h5 class="fw-bold">Despliegue, Capacitación & Soporte</h5>
+            <p class="text-muted small mb-0">Lanzamiento en servidores de producción, capacitación a su personal operativo y soporte de garantía post-lanzamiento.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Project Estimator / Cotizador de Software -->
+  <section class="py-5" id="cotizador" style="background: linear-gradient(135deg, #0b1120 0%, #1e293b 100%); color: #ffffff;">
+    <div class="container py-4">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <span class="badge-innova-dark mb-2"><i class="bi bi-speedometer2"></i> Calculadora Interactiva</span>
+        <h2 class="display-6 fw-bold text-white">Estime su Proyecto de Software</h2>
+        <p class="text-white-50">Seleccione las características de su aplicación para obtener un tiempo de entrega estimado y solicitar propuesta formal inmediata.</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="p-4 p-md-5 rounded-4" style="background: rgba(15, 23, 42, 0.9); border: 1px solid rgba(56, 189, 248, 0.3); box-shadow: 0 25px 60px rgba(0,0,0,0.5);">
+            <form id="projectEstimatorForm">
+              <!-- Paso 1: Tipo de Proyecto -->
+              <h5 class="fw-bold text-white mb-3"><i class="bi bi-1-circle text-info me-2"></i>1. Seleccione el Tipo de Aplicación:</h5>
+              <div class="row g-3 mb-4">
+                <div class="col-md-3 col-6">
+                  <label class="form-check-card d-block h-100 text-center text-white" style="background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.2);">
+                    <input class="form-check-input d-none" type="radio" name="projectType" value="web_landing" checked>
+                    <i class="bi bi-window fs-2 text-info d-block mb-2"></i>
+                    <span class="small fw-bold">Portal / Landing Pro</span>
+                  </label>
+                </div>
+                <div class="col-md-3 col-6">
+                  <label class="form-check-card d-block h-100 text-center text-white" style="background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.2);">
+                    <input class="form-check-input d-none" type="radio" name="projectType" value="web_system">
+                    <i class="bi bi-laptop fs-2 text-info d-block mb-2"></i>
+                    <span class="small fw-bold">Sistema Web / SaaS</span>
+                  </label>
+                </div>
+                <div class="col-md-3 col-6">
+                  <label class="form-check-card d-block h-100 text-center text-white" style="background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.2);">
+                    <input class="form-check-input d-none" type="radio" name="projectType" value="mobile_app">
+                    <i class="bi bi-phone fs-2 text-info d-block mb-2"></i>
+                    <span class="small fw-bold">App Móvil (iOS/Android)</span>
+                  </label>
+                </div>
+                <div class="col-md-3 col-6">
+                  <label class="form-check-card d-block h-100 text-center text-white" style="background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.2);">
+                    <input class="form-check-input d-none" type="radio" name="projectType" value="enterprise_erp">
+                    <i class="bi bi-buildings fs-2 text-info d-block mb-2"></i>
+                    <span class="small fw-bold">ERP / Core Empresarial</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Paso 2: Módulos Adicionales -->
+              <h5 class="fw-bold text-white mb-3"><i class="bi bi-2-circle text-info me-2"></i>2. Módulos & Características Requeridas:</h5>
+              <div class="row g-3 mb-4">
+                <div class="col-md-4 col-sm-6">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="projectFeature" value="Usuarios y Roles" data-weeks="1" id="f1" checked>
+                    <label class="form-check-label text-white small" for="f1">Gestión de Usuarios y Roles</label>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="projectFeature" value="Pasarela de Pagos / DTE" data-weeks="2" id="f2">
+                    <label class="form-check-label text-white small" for="f2">Pagos en línea / Facturación DTE</label>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="projectFeature" value="Panel de Reportería / BI" data-weeks="1.5" id="f3" checked>
+                    <label class="form-check-label text-white small" for="f3">Dashboard & Reportería en tiempo real</label>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="projectFeature" value="Agente de IA / Bot Integrado" data-weeks="2" id="f4">
+                    <label class="form-check-label text-white small" for="f4">Agente Virtual de IA integrado</label>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="projectFeature" value="Notificaciones Push / WhatsApp" data-weeks="1" id="f5">
+                    <label class="form-check-label text-white small" for="f5">Notificaciones Push o WhatsApp</label>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="projectFeature" value="Seguridad Avanzada & WAF" data-weeks="1.5" id="f6">
+                    <label class="form-check-label text-white small" for="f6">Blindaje de Seguridad & WAF</label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Resultado Estimado -->
+              <div class="p-3 p-md-4 rounded-3 text-center" style="background: rgba(0, 168, 232, 0.15); border: 1px dashed #00a8e8;">
+                <div class="small text-info text-uppercase fw-bold mb-1">Tiempo de Desarrollo Estimado</div>
+                <div class="display-6 fw-bold text-white mb-2" id="calcTimelineDelivery">4 a 6 semanas aprox.</div>
+                <p class="text-white-50 small mb-3">Sujeto a alcance final y afinación en sesión técnica.</p>
+                <a id="sendEstimateWhatsAppBtn" href="https://wa.me/50368315695" target="_blank" class="btn btn-innova-primary px-4 py-2">
+                  <i class="bi bi-whatsapp"></i> Solicitar Propuesta Económica Formal
+                </a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-5 mb-5">
+        <div class="col-lg-4">
+          <img src="assets/img/logo-innovait.png" alt="InnovaIT Logo" class="footer-brand-logo mb-3">
+          <p class="text-secondary small pe-lg-4">
+            <strong>InnovaIT Servicios y Soluciones</strong>: Construcción de software de alta calidad, seguro y adaptable a los objetivos estratégicos de su empresa.
+          </p>
+        </div>
+        <div class="col-sm-6 col-lg-2">
+          <h6 class="text-white fw-bold mb-3">Navegación</h6>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="footer-link">Inicio</a></li>
+            <li><a href="formaciones.html" class="footer-link">Formaciones</a></li>
+            <li><a href="desarrollo-software.html" class="footer-link">Desarrollo Software</a></li>
+            <li><a href="soluciones-ti.html" class="footer-link">Soluciones TI</a></li>
+            <li><a href="contacto.html" class="footer-link">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <h6 class="text-white fw-bold mb-3">Soluciones</h6>
+          <ul class="list-unstyled">
+            <li><a href="#cotizador" class="footer-link">Cotizador de Software</a></li>
+            <li><a href="desarrollo-software.html" class="footer-link">Apps Web & Móviles</a></li>
+            <li><a href="desarrollo-software.html" class="footer-link">Sistemas ERP / CRM</a></li>
+            <li><a href="desarrollo-software.html" class="footer-link">Integración APIs & DTE</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <h6 class="text-white fw-bold mb-3">Contacto</h6>
+          <div class="footer-contact-item">
+            <i class="bi bi-whatsapp"></i>
+            <span class="small">+503 68315695</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope"></i>
+            <span class="small">info@innovait.com.sv</span>
+          </div>
+        </div>
+      </div>
+      <div class="border-top border-secondary pt-4 text-center small text-secondary">
+        <p class="mb-0">Copyright &copy; 2026 <strong>InnovaIT Servicios y Soluciones</strong>. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5.3 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- Main Script -->
+  <script src="assets/js/main.js"></script>
+  <!-- AI Agent Chat Widget -->
+  <script src="assets/js/agent-chat.js"></script>
+</body>
+</html>
